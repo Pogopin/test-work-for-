@@ -1,0 +1,129 @@
+.session {
+    margin-top: 64px;    
+}
+
+.session__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px; 
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+.session__item-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;
+}
+.session__item--size {
+    max-width: 704px;
+    /* height: 527px;     */
+}
+.session__item-title span {
+    font-weight: 700;
+    color: #f54932;
+}
+.session__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;   
+    margin-top: 60px;
+    margin-bottom: 48px;
+}
+
+tr:first-of-type td {    
+    border-top: 2px solid white;
+    padding-top: 0;    
+}
+tr:last-of-type td{
+    border-bottom: 2px solid white;
+    padding-bottom: 0;
+}
+td:last-of-type {
+    border-right: 2px solid white;
+    font-weight: 600;  
+    padding-left: 16px;
+}
+td:first-of-type {    
+    font-weight: 400;
+    opacity: 0.7;
+}
+td {
+    font-family: var(--font-family);
+    border: 2px solid  #d0d0d0;;
+    border-left: 2px solid white;
+    border-right: 2px solid #d0d0d0;;
+    max-width: 348px;
+    vertical-align: middle;
+    text-align: left;
+    padding: 16px 16px 16px 0;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+}
+.table__decore {
+    text-decoration: line-through 2px;
+    text-decoration-color: #F498AD;    
+}
+.session__question {  
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057a2;
+    text-decoration: none;
+}
+.session__list-mobile {
+    margin-top: 44px;
+}
+.session__list-item {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 16px;
+    color: #685f72;
+    position: relative;
+}
+.session__list-item > p{    
+    font-weight: 600;
+    color: #313131;
+    margin-top: 12px;
+}
+.session__list-item::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #d0d0d0;
+    left: 0;
+    bottom: 5px;
+}
+.session__list-item:last-child::after {
+    height: 0;  
+}
+.session__list-item:last-child {
+   margin-bottom: 40px;
+   padding: 0;
+}
+
+.session__list-pos {
+    display: inline-block;
+}
+@media screen and (max-width: 1024px) {   
+    .session__container {
+		flex-direction: column;
+		gap: 24px;
+	}
+}
+@media screen and (max-width: 565px) {   
+    .session__item-title {
+        font-size: 28px;      
+    }
+}
+@media screen and (max-width: 375px) {   
+    .session__question {
+        font-size: 18px;      
+    }
+}

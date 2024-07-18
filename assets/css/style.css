@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:wght@400;700&display=swap');
+@import './normalize.css';
+@import './reset.css';
+@import './variables.css';
+
+@import './header.css';
+@import './hero.css';
+@import './support.css';
+@import './session.css';
+@import './phase.css';
+@import './participants.css';
+@import './ticker.css';
+@import './footer.css';

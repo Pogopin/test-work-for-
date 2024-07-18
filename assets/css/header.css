@@ -1,0 +1,9 @@
+/* .header {
+    position: absolute;
+    left: 58px;
+} */
+.header__container {    
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 26px 15px;      
+}

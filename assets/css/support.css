@@ -1,0 +1,51 @@
+/* ---------------------------------support section */
+.support {
+    margin-top: 106px;
+}
+.support__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.support__item--size {
+    max-width: 764px;	
+}
+.support__item-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #313131;	
+}
+.support__item-text span {
+    font-weight: 700;
+    color: #f54932;
+}
+.hidden {
+    display: none;
+}
+.desktop-hidden {
+    display: none;
+}
+.mobile-hidden {
+    display: flex;
+}
+@media screen and (max-width: 1024px) {   
+    .support__container {
+		flex-direction: column;
+		gap: 24px;       
+	}
+}
+@media screen and (max-width: 565px) {   
+  
+	.support__item-text {
+		font-size: 28px;		
+	}   
+	.support {
+		margin-top: 48px;
+	}
+}

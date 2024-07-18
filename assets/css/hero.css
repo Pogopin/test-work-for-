@@ -1,0 +1,114 @@
+
+.hero {
+    padding-top: 124px;   
+    background-image: url('../images/full-image-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    margin-top: -92px;
+}
+.hero__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px;  
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 60px;
+}
+.hero__slogan {  
+    max-width: 550px; 
+    margin-bottom: 24px;
+}
+.hero__slogan-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--dark-grey);
+}
+.hero__slogan-title:last-child {
+    text-align: center;
+}
+.hero__sub-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--dark-grey);
+    max-width: 550px;
+}
+.hero__btn {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+.btn {
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #1f1f1f;
+    border-radius: 66px;
+    padding: 20px;
+    width: 263px;
+    height: 72px;
+    word-wrap:break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__btn-item:first-child {
+    background: #1f1f1f;
+    color: #fff;
+}
+.hero__btn-item:hover {
+    background: #fbce51;
+    color: #1f1f1f;
+}
+.hero__btn-item:hover + .hero__btn-item{
+    background: #1f1f1f;
+    color: #fff;
+}
+@media screen and (max-width: 1366px) { 
+    .hero {     
+        background-image: url('../images/bg-image.png'); 
+    }
+}
+@media screen and (max-width: 565px) {   
+    .hero__slogan-title {
+        font-size: 36px;
+        text-align: center;       
+    }
+}
+@media screen and (max-width: 375px) { 
+    .hero__slogan-title {
+        font-size: 36px;       
+    }
+    .hero__slogan-title:first-child {
+        text-align: left;
+    }
+    .hero {     
+        background-image: url('../images/mobile-page-img.png');        
+    }
+    .hero__sub-title {
+        font-size: 18px;
+        text-align: left;
+    }
+    .hero__btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__btn-item {
+        width: 100%;
+        padding: 18px 20px;
+        width: 335px;
+        height: 47px;
+    }
+}

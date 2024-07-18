@@ -1,0 +1,114 @@
+.participants {
+    margin-bottom: 140px;
+    
+}
+.participants__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+.participants__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #313131;
+}
+.swiper {
+    overflow: hidden;
+}
+  
+.swiper-wrapper { 
+    display: inline-flex;
+}
+.participants__slider {
+    margin-top: 60px;
+    position: relative;
+}
+.participants-slide {  
+    display: flex;    
+    gap: 70px;   
+}
+.slider-buttons {
+    position: absolute;
+    top: -22%;
+    right: 65px;
+    display: flex;
+    align-items: center;
+}
+.participants-slider-prev {
+    position: absolute; 
+    right: 35px;
+}
+  
+.participants-slider-next {
+    position: absolute;    
+    left: 33px;
+    transform: rotate(180deg);
+}
+.participants-slider-btn {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: url('../images/carousel-button.svg') center center no-repeat;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+.participants-slide__name {
+    margin-top: 28px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #313131;
+}
+.participants-slide__status {
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;    
+}
+.participants-slide__btn {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3057a2;
+    padding: 12px;
+    border: 1px solid #3057a2;
+    border-radius: 62px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.participants-slide__btn:hover {
+    color: #fff;
+    background-color: #3057a2;
+}
+
+.participants-slide__thumb {
+    margin: auto;
+}
+.participants-slide__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 865px) {   
+    .participants__title {      
+        text-align: center;      
+    }
+    .slider-buttons {
+        top: 110%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media screen and (max-width: 720px) {   
+    .participants__title {       
+        font-size: 36px;           
+    }
+}

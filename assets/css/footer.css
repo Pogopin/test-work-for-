@@ -1,0 +1,11 @@
+.footer {
+    padding: 42px 72px;
+    background-color: #e9ded4;
+}
+.footer__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--dark-grey);
+}
