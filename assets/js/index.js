@@ -32,7 +32,7 @@ const participantsSlider = new Swiper('.participants-slider', {
     initialSlide: 0,
     loop: true,
     autoplay: {
-        delay: 1000,
+        delay: 4000,
         disableOnInteraction: false,
     },   
     // Navigation arrows
